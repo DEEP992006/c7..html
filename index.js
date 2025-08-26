@@ -151,7 +151,6 @@ prevBtn.addEventListener('click', () => {
 submitBtn.addEventListener('click', () => {
     saveAnswer();
     submitQuiz();
-    callapi()
 });
 const callapi = async () => {
     const totalTime = 35 * 60;
@@ -237,3 +236,4 @@ userForm.addEventListener('submit', (e) => {
     updateButtons();
     startTimer();
 });
+
