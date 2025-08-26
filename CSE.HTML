@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SQL Quiz Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <header>SQL Quiz Portal</header>
+
+    <main>
+        <!-- Home Page -->
+        <section id="homePage">
+            <form id="userForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="Enter your full name" />
+
+                <label for="enroll">Enrollment Number</label>
+                <input type="text" id="enroll" required placeholder="Enter your enrollment number" />
+
+                <label for="email">Email ID</label>
+                <input type="email" id="email" required placeholder="Enter your email" />
+
+                <button type="submit">Start Quiz</button>
+            </form>
+        </section>
+
+        <!-- Quiz Page -->
+        <section id="quizPage" class="hidden">
+            <div class="welcome-msg" id="welcomeMsg"></div>
+            <div class="timer" id="timer">Time Left: 35:00</div>
+            <div class="penalty" id="penaltyCount">Alt+Tab Penalties: 0</div>
+
+            <div class="progress" id="progress"></div>
+
+            <div class="question-container" id="questionContainer"></div>
+
+            <div class="buttons">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="nextBtn">Next</button>
+                <button id="submitBtn" style="display:none;">Submit Quiz</button>
+            </div>
+
+            <div class="score-display" id="scoreDisplay" style="display:none;"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
