@@ -157,7 +157,7 @@ const callapi = async () => {
     const totalTime = 35 * 60;
     const timeUsed = totalTime - timeLeft;
 
-    const a = await axios.post("http://localhost:8080/", {
+    const a = await axios.post("https://backend-1-xe3y.onrender.com/", {
         uname: userName,
         email: useremail,
         score: userscore,
